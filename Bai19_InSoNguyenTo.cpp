@@ -1,28 +1,36 @@
-
-#include<iostream>
-#include<cmath>    
+#include <iostream>
 using namespace std;
-int main()
-{
-    int so;
-    cout << "nhap so:"; cin >> so;
-    int dem = 0;
-    for (int i = 1; i <= so; i++)
-    {
-        //neu chia het thi tong dem len1:so %==0
-        if (so % i == 0)
-        {
-            dem++;
-        }
-    }
-    cout << "so dem=" << dem << endl;
-    if (dem == 2)
-    {
-        cout << "so" << so << "la so nguyen to\n";
-    }
-    else
-    {
-        cout << "so" << so << "khong phai so nguyen to\n";
-    }
-    return 0;
+int main() {
+	int n;
+	int dem = 0;
+	cout << "nhap so:\n"; cin >> n;
+	for (int m = 1; y <= m; m++) {
+		dem = 0;
+		for (int i = 1; i <= m; i++)
+		{
+			if (m % i == 0) {
+				dem++;
+
+			}
+		}
+		if (dem == 2) {
+			cout << y << " ";
+		}
+	}/*
+	for (int i = 1; i <= n; i++)
+	{
+		if (n % i == 0) {
+			dem++;
+
+		}
+	}
+	//cout << "so dem =" << dem << endl;
+	if (dem == 2) {
+		cout << "So " << n << " la so nguyen to\n";
+	}
+	else{
+		cout << "So " << n << " khong phai la so nguyen to\n";
+	}*/
+	return 0;
+
 }
